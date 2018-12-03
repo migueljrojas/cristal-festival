@@ -1,3 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
-
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../fonts/Geomanist-Bold.eot');
+    src: url('../fonts/Geomanist-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Bold.woff2') format('woff2'),
+        url('../fonts/Geomanist-Bold.woff') format('woff'),
+        url('../fonts/Geomanist-Bold.ttf') format('truetype'),
+        url('../fonts/Geomanist-Bold.svg#Geomanist-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../fonts/Geomanist-Black.eot');
+    src: url('../fonts/Geomanist-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Black.woff2') format('woff2'),
+        url('../fonts/Geomanist-Black.woff') format('woff'),
+        url('../fonts/Geomanist-Black.ttf') format('truetype'),
+        url('../fonts/Geomanist-Black.svg#Geomanist-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../fonts/Geomanist-Regular.eot');
+    src: url('../fonts/Geomanist-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Regular.woff2') format('woff2'),
+        url('../fonts/Geomanist-Regular.woff') format('woff'),
+        url('../fonts/Geomanist-Regular.ttf') format('truetype'),
+        url('../fonts/Geomanist-Regular.svg#Geomanist-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

@@ -2,7 +2,7 @@
 @import 'mixins';
 @import 'libraries';
 @import 'modules';
-@import 'components';
+//@import 'components';
 @import 'pages';
 
 // Box sizing partial styles:
@@ -46,4 +46,11 @@ ul {
   background: #fff8e2;
   color: #000;
   padding: 0.5em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
 }

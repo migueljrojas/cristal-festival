@@ -2,3 +2,122 @@ extends _layouts/base
 
 block content
     main.home
+        section.home__hero
+            .home__hero__data
+                h2.home__hero__title este verano nos volvemos a juntar con la mejor música
+                .home__hero__image
+                    img(src='/images/logo.png')
+                .home__hero__locations
+                    .home__hero__location
+                        p.home__hero__ciudad coquimbo
+                        p.home__hero__fecha 9 febrero
+                    .home__hero__location
+                        p.home__hero__ciudad pucón
+                        p.home__hero__fecha 13 febrero
+                    .home__hero__location
+                        p.home__hero__ciudad viña del mar
+                        p.home__hero__fecha 16 febrero
+                button.home__hero__button preventa de entradas 4 de enero
+        section.home__cta
+            h2.home__cta__heading festivales y artistas
+            .home__cta__wrapper
+                .home__cta__column
+                    p.home__cta__ciudad coquimbo
+                    p.home__cta__fecha 9 febrero
+                    ul.home__cta__artistas-list
+                        li.home__cta__artista cultura prefética
+                        li.home__cta__artista rombai
+                        li.home__cta__artista chancho en piedra
+                        li.home__cta__artista cultura profética
+                        li.home__cta__artista dj who
+                        li.home__cta__artista francisca valenzuela
+                        li.home__cta__artista movimiento original
+                        li.home__cta__artista moral distraida
+                        li.home__cta__artista rombai
+                    p.home__cta__text 14:00 horas
+                    p.home__cta__text club de golf pan de azúcar
+                    a.home__cta__button 
+                        |comprar entradas 
+                        br
+                        |coquimbo
+                .home__cta__column
+                    p.home__cta__ciudad pucón
+                    p.home__cta__fecha 13 febrero
+                    ul.home__cta__artistas-list
+                        li.home__cta__artista cultura prefética
+                        li.home__cta__artista rombai
+                        li.home__cta__artista chancho en piedra
+                        li.home__cta__artista cultura profética
+                        li.home__cta__artista dj who
+                        li.home__cta__artista francisca valenzuela
+                        li.home__cta__artista movimiento original
+                        li.home__cta__artista moral distraida
+                        li.home__cta__artista rombai
+                    p.home__cta__text 14:00 horas
+                    p.home__cta__text eco parque pucón
+                    a.home__cta__button
+                        |comprar entradas
+                        br
+                        |pucón
+                .home__cta__column
+                    p.home__cta__ciudad viña del mar
+                    p.home__cta__fecha 16 febrero
+                    ul.home__cta__artistas-list
+                        li.home__cta__artista cultura prefética
+                        li.home__cta__artista rombai
+                        li.home__cta__artista chancho en piedra
+                        li.home__cta__artista cultura profética
+                        li.home__cta__artista dj who
+                        li.home__cta__artista francisca valenzuela
+                        li.home__cta__artista movimiento original
+                        li.home__cta__artista moral distraida
+                        li.home__cta__artista rombai
+                    p.home__cta__text 14:00 horas
+                    p.home__cta__text sporting valparaiso
+                    a.home__cta__button
+                        |comprar entradas
+                        br
+                        |viña del mar
+        section.home__main
+            .home__main__wrapper
+                .home__main__container
+                    h2.home__main__title información entradas
+                    p.home__main__text 
+                        |Evento para mayores de 18 años
+                        br
+                        |Al momento de ingresar al festival, debes llevar tu cédula de indentidad para acreditar tu edad.
+                        br
+                        span ¡Juntate con tus amigos y obten descuento en tus entradas!
+                    .home__main__col
+                        .home__main__row
+                            p.home__main__subtitle.home__main__subtitle--color preventa
+                            p.home__main__comment.home__main__comment--color desde el 5 de diciembre
+                        .home__main__row
+                            p.home__main__subtitle entrada general
+                            p.home__main__number  $15.000
+                            p.home__main__comment no incluye cargo por servicio: $1.800
+                        .home__main__row
+                            p.home__main__subtitle descuento juntemonos (4x3)
+                            p.home__main__number $45.000
+                            p.home__main__comment no incluye cargo por servicio: $5.400
+                        .home__main__row
+                            p.home__main__subtitle precio final por persona
+                            p.home__main__number $12.600
+                    .home__main__col.home__main__col--buttons
+                        a.home__main__button revisa bases y condiciones antes de comprar tu entrada
+                        a.home__main__button comprar entradas
+                    p.home__main__conditions ** O hasta agotar stock de 3000 entradas disponibles(lo primero que suceda).
+                    p.home__main__conditions * Los asistentes autorizan a CCU CHILE para utilizar sus imágenes y/o voces con fines comerciales y/o publicitarios para la marca Cristal, permitiendo que se les fotografíe y graben en el festival
+                    p.home__main__conditions * La modificación de la grilla de artistas o no presentación de alguno de pestos no implicará la cancelación del festival, ni dará derecho a la devolución de entradas
+
+                .home__main__container
+                    h2.home__main__title.home__main__title--size-modifier vive la experiencia
+                    .home__main__video
+                        iframe(src='https://www.youtube.com/embed/_I1S1C6GO-o' frameborder='0')
+                .home__main__container
+                    h2.home__main__title.home__main__title--size-modifier.home__main__title--spotify preparate con nuestra playlist
+                        .home__main__image
+                            img(src='../images/spotify-logo.png')
+                    p.home__main__subtitle escucha en spotify nuestra playlist festival cristal juntémonos
+                    .home__main__spotify-playlist
+                        iframe(src="https://open.spotify.com/embed/user/cervezacristalchile/playlist/1zWkXuHTT9qDhzUzdIwVUw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media")

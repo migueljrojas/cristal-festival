@@ -1,3 +1,92 @@
 .footer {
-    
+    background: $black;
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @include mq(sm) {
+        padding: 2% 0;
+    }
+
+    &__title {
+        color: $white;
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 18px;
+
+        @include mq(sm) {
+            font-size: 24px;
+        }
+    }
+
+    &__button {
+        background: $yellow;
+        padding: 20px 40px;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 1;
+        color: $black;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            color: $black;
+            background: $yellow + #333;
+        }
+    }
+
+    &__social {
+        display: flex;
+        padding: 20px 0;
+        width: 50%;
+        justify-content: space-between;
+        
+        @include mq(sm) {
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            width: 350px;
+        }
+
+        li {
+            display: flex;
+            background: $white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+
+            @include mq(sm) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        i {
+            color: $black;
+            font-size: 30px;
+
+            @include mq(sm) {
+                font-size: 60px;
+            }
+        }
+    }
+
+    &__legal {
+        color: $yellow - #666;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            color: $yellow;
+            text-decoration: underline;
+        }
+    }
 }

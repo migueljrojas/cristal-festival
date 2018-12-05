@@ -64,6 +64,7 @@
         font-size: 14px;
         margin-left: 10px;
         margin-bottom: 20px;
+        text-decoration: none;
 
         @include mq(sm) {
             margin-bottom: 0;
@@ -82,6 +83,16 @@
             justify-content: center;
             align-items: center;
             margin-left: 10px;
+
+            &:hover {
+                border: 1px solid $yellow;
+            }
+        }
+
+        a:hover {
+            i{
+                color: $yellow;
+            }
         }
 
         i {

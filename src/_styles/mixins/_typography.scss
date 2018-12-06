@@ -38,13 +38,12 @@
 
 @font-face {
     font-family: 'Gagalin';
-    src: url('Gagalin-Regular.eot');
-    src: url('Gagalin-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Gagalin-Regular.woff2') format('woff2'),
-        url('Gagalin-Regular.woff') format('woff'),
-        url('Gagalin-Regular.ttf') format('truetype'),
-        url('Gagalin-Regular.svg#Gagalin-Regular') format('svg');
+    src: url('../fonts/Gagalin-Regular.eot');
+    src: url('../fonts/Gagalin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gagalin-Regular.woff2') format('woff2'),
+        url('../fonts/Gagalin-Regular.woff') format('woff'),
+        url('../fonts/Gagalin-Regular.ttf') format('truetype'),
+        url('../fonts/Gagalin-Regular.svg#Gagalin-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-

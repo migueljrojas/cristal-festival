@@ -13,6 +13,7 @@
             align-items: flex-end;
             background: url('../images/hero.jpg') no-repeat;
             min-height: 0;
+            background-size: cover;
         }
 
         &__data {
@@ -61,20 +62,53 @@
     &__cta {
         $cta: &;
 
-        background: $green;
+        background: transparent;
         display: inline-block;
         width: 100%;
         text-transform: uppercase;
+        padding: 40px 0 20px 0;
 
-        &__heading {
-            color: $yellow;
-            text-align: center;
-            margin: 0;
-            padding: 2% 0;
+        @include mq(sm) {
+            padding: 80px 0;
 
+        }
+
+        &__title-container {
+            position: relative;
+            margin-bottom: 40px;
 
             @include mq(sm) {
-                font-size: 60px;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                filter:brightness(90%);
+                width: 100%;
+                height: 180%;
+            }
+        }
+
+        &__title {
+            width: 100%;
+            text-transform: uppercase;
+            color: $white;
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            margin: 0;
+
+            @include mq(sm) {
+                margin: 0 0 40px 0;
+                font-size: 70px;
+                width: 100%;
             }
         }
 
@@ -115,25 +149,14 @@
 
             &:hover {
                 background: $yellow;
+                box-shadow: -10px 10px 0 rgba(0,0,0,.3);
 
                 #{$cta}__ciudad {
                     color: $darkGreen;
                 }
 
-                #{$cta}__artistas-list {
-                    height: auto;
-                    overflow: visible;
-                    margin-bottom: 20px;
-
-                    @include mq(sm) {
-                        margin-bottom: 60px;
-                    }
-                }
-
                 #{$cta}__text {
-                    height: 0px;
-                    overflow: hidden;
-                    padding-bottom: 0;
+                    color: $darkGreen;
                 }
 
                 #{$cta}__button {
@@ -148,41 +171,39 @@
             color: $yellow;
             font-weight: 900;
             margin: 0;
-            font-size: 30px;
+            font-size: 25px;
+
+            @include mq(sm) {
+                font-size: 50px;
+            }
         }
 
         &__fecha {
             @include trans;
+
+            font-size: 25px;
             color: $white;
-            font-size: 30px;
             margin: 0;
             font-weight: 900;
-            line-height: 16px;
-            padding-bottom: 30px;
-        }
+            line-height: 20px;
+            padding-bottom: 40px;
 
-        &__artistas-list {
-            @include trans;
-
-            overflow: hidden;
-            height: 0px;
-        }
-
-        &__artista {
-            @include trans;
-
-            color: $darkGreen;
-            padding-bottom: 10px;
-            font-size: 20px;
+            @include mq(sm) {
+                padding-bottom: 80px;
+                font-size: 50px;
+            }
         }
 
         &__text {
             @include trans;
 
             color: $white;
-            font-size: 20px;
             margin: 0;
             font-weight: 900;
+
+            @include mq(sm) {
+                font-size: 25px;
+            }
 
             &:last-of-type {
                 padding-bottom: 40px;
@@ -202,10 +223,10 @@
             font-weight: 900;
 
             @include mq(sm) {
+                font-size: 20px;
                 left: 50%;
                 transform: translate(-50%);
                 position: absolute;
-
             }
         }
     }
@@ -213,32 +234,121 @@
     &__main {
         width: 100%;
         background: $green;
-        padding: 20px;
 
         @include mq(sm) {
+            padding: 20px;
             background: $green url('../images/ornamental-back.jpg') bottom center / cover;
             padding: 0;
+        }
+
+        &__lineup {
+            background: url('../images/yellow-back.jpg') no-repeat;
+            background-size: cover;
+            padding: 20px 10px;
+
+            @include mq(sm) {
+                padding: 80px;
+
+            }
+        }
+
+        &__lineup-text {
+            font-family: $altFont;
+            color: $white;
+            text-transform: uppercase;
+            text-shadow: -2px 2px 0 $black;
+            font-size: 28px;
+
+            @include mq(sm) {
+                font-size: 80px;
+            }
+
+            span {
+                color: $green;
+            }
+        }
+
+        &__lineup-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            @include mq(sm) {
+            }
         }
 
         &__wrapper {
             display: block;
 
-            @include mq(sm) {
-                width: 90%;
-                max-width: 890px;
-                margin-left: auto;
-                margin-right: auto;
-            }
         }
 
         &__container {
             @include mq(sm) {
                 padding-top: 80px;
+                padding-bottom: 80px;
             }
 
-            &:last-child {
+            &--video {
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+
                 @include mq(sm) {
-                    padding-bottom: 80px;
+                    padding:80px;
+                }
+            }
+
+            &--information {
+                background: transparentize($darkGreen, .15);
+                padding: 20px;
+
+                @include mq(sm) {
+                    padding: 0;
+                }
+            }
+
+            &--spotify {
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+
+                @include mq(sm) {
+                    padding: 80px 0;
+                }
+            }
+        }
+
+        &__title-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            margin: 0 0 40px 0;
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                filter:brightness(90%);
+                width: 100%;
+                height: 180%;
+            }
+
+            &--lineup {
+                margin-top: 20px;
+                @include mq(sm) {
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 40px;
+                    margin-top: 40px;
+                }
+
+                img {
+                    mix-blend-mode: multiply;
                 }
             }
         }
@@ -247,31 +357,40 @@
             width: 100%;
             text-transform: uppercase;
             color: $white;
-            border-top: 1px solid $yellow;
-            border-bottom: 1px solid $yellow;
             text-align: center;
             font-size: 26px;
-            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            margin: 0;
 
             @include mq(sm) {
-                margin: 0 0 40px 0;
-                font-size: 74px;
-            }
-
-            &--size-modifier {
-                margin-left: auto;
-                margin-right: auto;
-                width: 80%;
+                width: 100%;
+                padding-bottom: 10px;
+                font-size: 70px;
             }
 
             &--spotify {
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-around;
-                align-items: center;
+                margin-bottom: 0;
+                font-size: 28px;
 
                 @include mq(sm) {
+                    width: 70%;
                     font-size: 68px;
+                    margin-left: auto;
+                    padding-right: 50px;
+                    margin-bottom: auto;
+                }
+            }
+
+            &--lineup {
+                font-family: $altFont;
+                letter-spacing: 3px;
+                font-size: 50px;
+                margin: 0;
+
+                @include mq(sm) {
+                    font-size: 100px;
+
                 }
             }
         }
@@ -282,10 +401,10 @@
             margin: 0;
             padding-bottom: 20px;
             font-size: 18px;
-            @include mq(sm) {
-                font-size: 20px;
-                padding-bottom: 40px;
 
+            @include mq(sm) {
+                font-size: 25px;
+                padding-bottom: 40px;
             }
 
             span {
@@ -294,52 +413,47 @@
         }
 
         &__col {
+            border: 1px solid $yellow;
+            border-radius: 10px;
 
-            @include mq(sm) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            &--tables {
+                justify-content: space-between;
+                max-width: 1200px;
                 margin-left: auto;
                 margin-right: auto;
-                width: 40%;
+                margin-bottom: 20px;
+
+                @include mq(sm) {
+                    margin-bottom: 80px;
+                    display: flex;
+                }
             }
 
             &--buttons {
+                border: none;
 
                 @include mq(sm) {
                     justify-content: space-around;
                     display: flex;
-                    width: 80%;
+                    width: 50%;
                     margin-bottom: 40px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
 
         &__row {
-            border: 2px solid $yellow;
             text-align: center;
             margin: 0;
-            padding: 20px 0;
+            padding: 15px 25px;;
 
-            &:nth-child(1) {
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-            }
-
-            &:nth-child(2){
-                border-top: none;
-                border-bottom: none;
-            }
-
-            &:nth-child(3) {
-                border-bottom: none;
-            }
-
-            &:nth-child(4) {
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                margin-bottom: 20px;
-
-                @include mq(sm) {
-                    margin-bottom: 40px;
-                }
+            &:not(:last-child) {
+                border-bottom: 1px solid $yellow;
             }
 
             p {
@@ -352,19 +466,19 @@
             text-transform: uppercase;
             font-weight: 900;
             text-align: center;
+            font-size: 20px;
 
             @include mq(sm) {
-                font-size: 20px;
+                font-size: 25px;
             }
 
             &--color {
                 color: $yellow;
                 font-size: 30px;
+            }
 
-                @include mq(sm) {
-                    font-size: 40px;
-
-                }
+            &--secondary {
+                font-size: 14px;
             }
         }
 
@@ -381,7 +495,11 @@
 
         &__number {
             color: $white;
-            font-size: 40px;
+            font-size: 30px;
+
+            &--secondary {
+                font-size: 20px;
+            }
         }
 
         &__button {
@@ -419,6 +537,7 @@
                 font-size: 18px;
                 width: 90%;
                 padding-bottom: 0;
+                width: 50%;
             }
 
         }
@@ -444,12 +563,25 @@
         }
 
         &__image {
-            display: none;
+            &--spotify {
+                display: none;
 
-            @include mq(sm) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include mq(sm) {
+                    display: block;
+                    height: 180px;
+                    width: 30%;
+                    position: relative;
+
+                }
+
+                img {
+                    position: absolute;
+                    left: 60%;
+                    top: 45%;
+                    transform: translate3d(-50%, -50%, 0);
+                    width: 150px;
+                    height: 150px;
+                }
             }
         }
 

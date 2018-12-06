@@ -9,6 +9,7 @@
     width: 100%;
     text-transform: uppercase;
     padding: 20px;
+    height: 80px;;
 
     @include mq(sm) {
         padding: 0 30px;

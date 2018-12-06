@@ -12,15 +12,14 @@
             justify-content: flex-end;
             align-items: flex-end;
             background: url('../images/hero.jpg') no-repeat;
-            background-size: cover;
             min-height: 0;
         }
 
         &__data {
 
             @include mq(sm) {
-                width: 45%;
-                padding: 10% 10% 10% 0;
+                width: 48%;
+                padding: 5% 8% 10% 0;
             }
         }
 
@@ -30,7 +29,7 @@
             text-align: center;
             margin: 0;
             font-weight: 700;
-            padding-bottom: 2%;
+            padding-bottom: 4%;
 
             @include mq(sm) {
                 font-size: 32px;
@@ -41,50 +40,17 @@
             @include img(48%);
         }
 
-        &__locations {
-            display: flex;
-            padding-bottom: 10%;
-            justify-content: space-around;
-        }
-
-        &__location {
-            background: $yellow;
-            justify-content: center;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px;
-
-            @include mq(sm) {
-                padding: 1% 3.5%;
-
-            }
-        }
-
-        &__ciudad,
-        &__fecha {
-            margin: 0;
-            color: $darkGreen;
-            font-family: $mainFont;
-            text-transform: uppercase;
-            font-weight: 900;
-
-            @include mq(sm) {
-                font-size: 1.5vw;;
-
-            }
-        }
-
         &__button {
-            background: $darkGreen;
+            background: $yellow;
             margin-left: auto;
             margin-right: auto;
             display: block;
-            padding: 2% 3%;
+            padding: 3% 4%;
             border: none;
-            border-radius: 50px;
-            color: $white;
+            border-radius: 15px;
+            color: $darkGreen;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 900;
             font-size: 14px;
             @include mq(sm) {
                 font-size: 1.3vw;
@@ -234,7 +200,6 @@
             width: 80%;
             cursor: pointer;
             font-weight: 900;
-            text-decoration: none;
 
             @include mq(sm) {
                 left: 50%;
@@ -251,7 +216,7 @@
         padding: 20px;
 
         @include mq(sm) {
-            background: url('../images/ornamental-back.png') $green bottom center / cover;
+            background: $green url('../images/ornamental-back.jpg') bottom center / cover;
             padding: 0;
         }
 
@@ -348,7 +313,7 @@
         }
 
         &__row {
-            border: 1px solid $yellow;
+            border: 2px solid $yellow;
             text-align: center;
             margin: 0;
             padding: 20px 0;
@@ -432,7 +397,6 @@
             font-weight: 700;
             margin-bottom: 20px;
             height: 50px;
-            text-decoration: none;
 
             @include mq(sm) {
                 font-size: 18px;

@@ -7,26 +7,24 @@ block content
                 h2.home__hero__title este verano nos volvemos a juntar con la mejor música
                 .home__hero__image
                     img(src='images/logo.png')
-                button.home__hero__button preventa de entradas 7 de diciembre
+                button.home__hero__button preventa de entradas 11 de diciembre
         .home__main
             .home__main__wrapper
-                section.home__main__container.home__main__container--video
-                    .home__main__title-container
-                        img(src='images/splatter.png')
-                        h2.home__main__title vive la experiencia
-                    .home__main__video.wow.fadeInLeftBig
-                        iframe(src='https://www.youtube.com/embed/_I1S1C6GO-o' frameborder='0')
                 section.home__main__lineup
                     .home__main__title-container.home__main__title-container--lineup
                         img(src='images/splatter.png')
                         h2.home__main__title.home__main__title--lineup line up
-                    .home__main__lineup-container
-                        .home__main__lineup-text.wow.fadeInUpBig
-                            span cultura profética • rombai
+                    .home__main__lineup-container.wow.fadeInUpBig
+                        .home__main__lineup-text
+                            span • 
+                            | cultura profética 
+                            br.home__main__lineup-text--hide
+                            span • 
+                            |  rombai
                             br
                             span • 
                             | chancho en piedra 
-                            br
+                            br.home__main__lineup-text--hide
                             span •
                             |  dj who
                             br
@@ -38,6 +36,11 @@ block content
                             br
                             span •
                             |  movimiento original
+                            br
+                            p* line up oficial para cada festival
+                section.home__main__container.home__main__container--video
+                    .home__main__video.wow.fadeInLeftBig
+                        iframe(src='https://www.youtube.com/embed/_I1S1C6GO-o' frameborder='0')
                 section.home__cta
                     .home__cta__title-container
                         img(src='images/splatter.png')
@@ -48,6 +51,7 @@ block content
                             p.home__cta__fecha 9 febrero
                             p.home__cta__text 14:00 horas
                             p.home__cta__text club de golf pan de azúcar
+                            a.home__cta__ubicacion(href="https://www.google.com.ar/search?q=club%20de%20golf%20pan%20de%20azucar%20chile&oq=club+de+golf+pan+de+azucar+chile&aqs=chrome..69i57.6492j0j7&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=-29979822,-71282966,122&tbm=lcl&rldimm=10968908154475441700&ved=2ahUKEwiqgY_k_Y3fAhVGgpAKHbg_CqwQvS4wAHoECAAQEw&rldoc=1&tbs=lrf:!2m1!1e2!3sIAE,lf:1,lf_ui:1#rlfi=hd:;si:10968908154475441700;mv:!1m2!1d-29.9786239!2d-71.2826048!2m2!1d-29.981021!2d-71.2833277;tbs:lrf:!2m1!1e2!3sIAE,lf:1,lf_ui:1" target="_blank") ver ubicacion
                             a.home__cta__button 
                                 |comprar entradas 
                                 br
@@ -57,6 +61,7 @@ block content
                             p.home__cta__fecha 13 febrero
                             p.home__cta__text 14:00 horas
                             p.home__cta__text eco parque pucón
+                            a.home__cta__ubicacion(href="https://www.google.com.ar/maps/place/Ecoparque+Pucon+-+Camino+a+Quelhue+4,+Pucon,+Puc%C3%B3n,+Regi%C3%B3n+de+la+Araucan%C3%ADa,+Chile/@-39.2722227,-71.9479104,16z/data=!4m2!3m1!1s0x961380a1dc7f6931:0x45ecc2ed49e41676" target="_blank") ver ubicacion
                             a.home__cta__button
                                 |comprar entradas
                                 br
@@ -66,6 +71,7 @@ block content
                             p.home__cta__fecha 16 febrero
                             p.home__cta__text 14:00 horas
                             p.home__cta__text sporting valparaiso
+                            a.home__cta__ubicacion(href="https://www.google.com.ar/maps/place/Valpara%C3%ADso+Sporting+Club+Vi%C3%B1a+del+Mar+-+Los+Casta%C3%B1os+404,+Vi%C3%B1a+del+Mar,+Regi%C3%B3n+de+Valpara%C3%ADso,+Chile/@-33.0224396,-71.5385431,17z/data=!4m2!3m1!1s0x9689de77edb106b9:0xe54935d254ef17e" target="_blank") ver ubicacion
                             a.home__cta__button
                                 |comprar entradas
                                 br
@@ -85,20 +91,20 @@ block content
                             .home__main__row
                                 p.home__main__subtitle.home__main__subtitle--color preventa 1
                                 p.home__main__comment.home__main__comment--color 
-                                    | desde el 7 de diciembre a las 12:00 HRS
+                                    | desde el 11 de diciembre a las 12:00 HRS
                                     br
                                     | al 7 de enero a las 23:59 hrs
                             .home__main__row
                                 p.home__main__subtitle entrada general
                                 p.home__main__number  $15.000
-                                p.home__main__comment no incluye cargo por servicio
+                                p.home__main__comment no incluye cargo por servicio ($1.800)
                             .home__main__row
                                 p.home__main__subtitle promo juntemonos (4x3)
                                 p.home__main__number $45.000
                                 br
                                 p.home__main__subtitle.home__main__subtitle--secondary precio final por persona
                                 p.home__main__number.home__main__number--secondary $11.250
-                                p.home__main__comment no incluye cargo por servicio
+                                p.home__main__comment no incluye cargo por servicio ($5.400)
                         .home__main__col.wow.fadeInUpBig(data-wow-delay=".25s")
                             .home__main__row
                                 p.home__main__subtitle.home__main__subtitle--color preventa 2
@@ -109,39 +115,38 @@ block content
                             .home__main__row
                                 p.home__main__subtitle entrada general
                                 p.home__main__number  $18.000
-                                p.home__main__comment no incluye cargo por servicio
+                                p.home__main__comment no incluye cargo por servicio ($2.200)
                             .home__main__row
                                 p.home__main__subtitle promo juntemonos (4x3)
                                 p.home__main__number $54.000
                                 br
                                 p.home__main__subtitle.home__main__subtitle--secondary precio final por persona
                                 p.home__main__number.home__main__number--secondary $13.500
-                                p.home__main__comment no incluye cargo por servicio
+                                p.home__main__comment no incluye cargo por servicio ($6.600)
                         .home__main__col.wow.fadeInUpBig(data-wow-delay=".5s")
                             .home__main__row
                                 p.home__main__subtitle.home__main__subtitle--color venta
                                 p.home__main__comment.home__main__comment--color 
                                     | desde el 5 de febrero
                                     br
-                                    | hasta agotar stock
+                                    | el dia de cada festival
                             .home__main__row
                                 p.home__main__subtitle entrada general
                                 p.home__main__number  $20.000
-                                p.home__main__comment no incluye cargo por servicio
+                                p.home__main__comment no incluye cargo por servicio ($2.400)
                             .home__main__row
                                 p.home__main__subtitle promo juntemonos (4x3)
                                 p.home__main__number $60.000
                                 br
                                 p.home__main__subtitle.home__main__subtitle--secondary precio final por persona
                                 p.home__main__number.home__main__number--secondary $15.000
-                                p.home__main__comment no incluye cargo por servicio
+                                p.home__main__comment no incluye cargo por servicio ($7.200)
                     
                     .home__main__col--buttons
                         a.home__main__button(href="https://google.com", target="_blank") revisa bases y condiciones antes de comprar tu entrada
                         a.home__main__button(href="https://google.com", target="_blank") comprar entradas
                     p.home__main__conditions * Los asistentes autorizan a CCU CHILE para utilizar sus imágenes y/o voces con fines comerciales y/o publicitarios para la marca Cristal, permitiendo que se les fotografíe y graben en el festival
                     p.home__main__conditions * La modificación de la grilla de artistas o no presentación de alguno de pestos no implicará la cancelación del festival, ni dará derecho a la devolución de entradas
-                    p.home__main__conditions * Capacidad por recinto(Info por confirmar).
 
                 section.home__main__container.home__main__container--spotify
                     .home__main__title-container

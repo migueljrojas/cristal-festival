@@ -3,7 +3,7 @@ extends _layouts/base
 block content
     main.home
         section.home__hero
-            .home__hero__data
+            .home__hero__data.wow.fadeInUpBig
                 h2.home__hero__title este verano nos volvemos a juntar con la mejor música
                 .home__hero__image
                     img(src='images/logo.png')
@@ -14,14 +14,14 @@ block content
                     .home__main__title-container
                         img(src='images/splatter.png')
                         h2.home__main__title vive la experiencia
-                    .home__main__video
+                    .home__main__video.wow.fadeInLeftBig
                         iframe(src='https://www.youtube.com/embed/_I1S1C6GO-o' frameborder='0')
                 section.home__main__lineup
                     .home__main__title-container.home__main__title-container--lineup
                         img(src='images/splatter.png')
                         h2.home__main__title.home__main__title--lineup line up
                     .home__main__lineup-container
-                        .home__main__lineup-text
+                        .home__main__lineup-text.wow.fadeInUpBig
                             span cultura profética • rombai
                             br
                             span • 
@@ -43,7 +43,7 @@ block content
                         img(src='images/splatter.png')
                         h2.home__cta__title festivales
                     .home__cta__wrapper
-                        .home__cta__column
+                        .home__cta__column.wow.fadeInLeftBig
                             p.home__cta__ciudad coquimbo
                             p.home__cta__fecha 9 febrero
                             p.home__cta__text 14:00 horas
@@ -52,7 +52,7 @@ block content
                                 |comprar entradas 
                                 br
                                 |coquimbo
-                        .home__cta__column
+                        .home__cta__column.wow.fadeInLeftBig(data-wow-delay=".25s")
                             p.home__cta__ciudad pucón
                             p.home__cta__fecha 13 febrero
                             p.home__cta__text 14:00 horas
@@ -61,7 +61,7 @@ block content
                                 |comprar entradas
                                 br
                                 |pucón
-                        .home__cta__column
+                        .home__cta__column.wow.fadeInLeftBig(data-wow-delay=".5s")
                             p.home__cta__ciudad viña del mar
                             p.home__cta__fecha 16 febrero
                             p.home__cta__text 14:00 horas
@@ -79,8 +79,9 @@ block content
                         |Al momento de ingresar al festival, debes llevar tu cédula de indentidad para acreditar tu edad.
                         br
                         span ¡Juntate con tus amigos y obten descuento en tus entradas!
+                    
                     .home__main__col--tables
-                        .home__main__col
+                        .home__main__col.wow.fadeInUpBig
                             .home__main__row
                                 p.home__main__subtitle.home__main__subtitle--color preventa 1
                                 p.home__main__comment.home__main__comment--color 
@@ -98,7 +99,7 @@ block content
                                 p.home__main__subtitle.home__main__subtitle--secondary precio final por persona
                                 p.home__main__number.home__main__number--secondary $11.250
                                 p.home__main__comment no incluye cargo por servicio
-                        .home__main__col
+                        .home__main__col.wow.fadeInUpBig(data-wow-delay=".25s")
                             .home__main__row
                                 p.home__main__subtitle.home__main__subtitle--color preventa 2
                                 p.home__main__comment.home__main__comment--color 
@@ -116,7 +117,7 @@ block content
                                 p.home__main__subtitle.home__main__subtitle--secondary precio final por persona
                                 p.home__main__number.home__main__number--secondary $13.500
                                 p.home__main__comment no incluye cargo por servicio
-                        .home__main__col
+                        .home__main__col.wow.fadeInUpBig(data-wow-delay=".5s")
                             .home__main__row
                                 p.home__main__subtitle.home__main__subtitle--color venta
                                 p.home__main__comment.home__main__comment--color 
@@ -134,9 +135,10 @@ block content
                                 p.home__main__subtitle.home__main__subtitle--secondary precio final por persona
                                 p.home__main__number.home__main__number--secondary $15.000
                                 p.home__main__comment no incluye cargo por servicio
-                    .home__main__col.home__main__col--buttons
-                        a.home__main__button revisa bases y condiciones antes de comprar tu entrada
-                        a.home__main__button comprar entradas
+                    
+                    .home__main__col--buttons
+                        a.home__main__button(href="https://google.com", target="_blank") revisa bases y condiciones antes de comprar tu entrada
+                        a.home__main__button(href="https://google.com", target="_blank") comprar entradas
                     p.home__main__conditions * Los asistentes autorizan a CCU CHILE para utilizar sus imágenes y/o voces con fines comerciales y/o publicitarios para la marca Cristal, permitiendo que se les fotografíe y graben en el festival
                     p.home__main__conditions * La modificación de la grilla de artistas o no presentación de alguno de pestos no implicará la cancelación del festival, ni dará derecho a la devolución de entradas
                     p.home__main__conditions * Capacidad por recinto(Info por confirmar).
@@ -145,7 +147,7 @@ block content
                     .home__main__title-container
                         img(src='images/splatter.png')
                         .home__main__image.home__main__image--spotify
-                            img(src='images/spotify-logo.png')
+                            img.-spotify(src='images/spotify-logo.png')
                         h2.home__main__title.home__main__title--spotify prepàrate con nuestra playlist
                     p.home__main__subtitle ¡escucha ahora nuestra playlist en spotify!
                     .home__main__spotify-playlist
